@@ -5,13 +5,14 @@ type Props = {
   x: number;
   y: number;
   size: number;
-  color: string;
+  color?: string;
 };
 
 export default function Piece(props: Props) {
   return (
     <div
       id="piece"
+      data-testid="piece"
       className="circle"
       style={{
         left: props.x,

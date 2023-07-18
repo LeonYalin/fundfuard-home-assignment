@@ -1,4 +1,4 @@
-function getRandomPosByMinMax(
+export function getRandomPosByMinMax(
   minX: number,
   minY: number,
   maxX: number,

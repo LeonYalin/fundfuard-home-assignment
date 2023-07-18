@@ -13,6 +13,7 @@ export default function Controls(props: Props) {
       <div id="controls-wrapper">
         <button
           id="btn-up"
+          data-testid="btn-up"
           className="btn-arrow"
           onClick={() => props.onMove(0, -100)}
         >
@@ -21,6 +22,7 @@ export default function Controls(props: Props) {
         <br />
         <button
           id="btn-left"
+          data-testid="btn-left"
           className="btn-arrow"
           onClick={() => props.onMove(-100, 0)}
         >
@@ -28,6 +30,7 @@ export default function Controls(props: Props) {
         </button>
         <button
           id="btn-right"
+          data-testid="btn-right"
           className="btn-arrow"
           onClick={() => props.onMove(100, -0)}
         >
@@ -36,6 +39,7 @@ export default function Controls(props: Props) {
         <br />
         <button
           id="btn-down"
+          data-testid="btn-down"
           className="btn-arrow"
           onClick={() => props.onMove(0, 100)}
         >
@@ -44,6 +48,7 @@ export default function Controls(props: Props) {
         <div id="action-buttons-wrapper">
           <button
             id="btn-reset"
+            data-testid="btn-reset"
             className="action-btn"
             onClick={() => props.onReset()}
           >
@@ -51,6 +56,7 @@ export default function Controls(props: Props) {
           </button>
           <button
             id="btn-randomize"
+            data-testid="btn-randomize"
             className="action-btn"
             onClick={() => props.onRandomize()}
           >
